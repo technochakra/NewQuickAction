@@ -1,3 +1,5 @@
+apply plugin: 'android-library'
+
 buildscript {
     repositories {
         mavenCentral()
@@ -7,9 +9,6 @@ buildscript {
     }
 }
 
-apply plugin: 'android-library'
-
-
 
 android {
   compileSdkVersion 14
@@ -17,7 +16,7 @@ android {
 
   sourceSets {
     main {
-      manifest.srcFile 'AndroidManifest.xml'
+      manifest.srcFile 'AndroidManifestlib.xml'
       java.srcDirs = ['src']
       res.srcDirs = ['res']
     }
